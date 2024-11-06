@@ -17,6 +17,12 @@ namespace GtagMod
 	{
 		bool inRoom;
 
+  		public void start()
+		{
+			Newtilla.Newtilla.OnJoinModded += OnModdedJoin;
+			Newtilla.Newtilla.OnLeaveModded += OnModdedLeave;
+		}
+
 		void OnEnable()
 		{
 			/* Set up your mod here */
